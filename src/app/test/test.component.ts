@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
+  name = "Spensa"
+  siteURL = window.location.href
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  shout(){
+    return this.name.toUpperCase()
+  }
 }
