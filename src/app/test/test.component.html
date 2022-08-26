@@ -1,6 +1,6 @@
-<div *ngIf="displayName; then thenBlock; else elseBlock" >
-
+<div [ngSwitch]="color" >
+    <div *ngSwitchCase="'red'" >Your picked red</div>
+    <div *ngSwitchCase="'blue'" >Your picked blue</div>
+    <div *ngSwitchCase="'green'" >Your picked green</div>
+    <div *ngSwitchDefault>Pick again</div>
 </div>
-
-<ng-template #thenBlock>Then Example</ng-template>
-<ng-template #elseBlock>Example of Else</ng-template>
