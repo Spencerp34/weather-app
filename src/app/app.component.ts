@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Weather App';
-  test = "Testing this"
+  username = "Spencer";
+  message=""
 }

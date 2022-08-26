@@ -2,6 +2,6 @@
   <h1>
     Welcome to {{title}}
   </h1>
-  <app-test></app-test>
-  <div class="app-another"></div>
+  <h2>Message: {{message}} </h2>
+  <app-test (childEvent)="message=$event" [parentData]="username" ></app-test>
 </div>
