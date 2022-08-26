@@ -31,6 +31,10 @@ export class TestComponent implements OnInit {
 
   greeting = ""
 
+  logMessage(param: any){
+    console.log(param)
+  }
+
   constructor() { }
 
   ngOnInit(): void {

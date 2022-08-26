@@ -19,6 +19,9 @@
 <button  >Button 1</button>
 {{greeting}}
 
+<input type="text" #myInput >
+<button (click)="logMessage(myInput.value)" >Log</button>
+
 <!-- Two ways to do the same thing -->
 <input [disabled]="isDisabled" type="text" value="Example" >
 <input bind-disabled="isDisabled" type="text" value="Example" >
