@@ -11,6 +11,20 @@ export class TestComponent implements OnInit {
   siteURL = window.location.href
   myId = "testId"
   isDisabled = false;
+  dangerClass = "text-danger"
+  hasError = false
+  isFun= true
+  messageClasses = {
+    "text-fun": !this.hasError,
+    "text-danger": this.hasError,
+    "text-special": this.isFun
+  }
+  highlightedColor = "orange";
+  titleStyles = {
+    color: "blue",
+    fontStyle: "italic"
+  }
+
   constructor() { }
 
   ngOnInit(): void {
