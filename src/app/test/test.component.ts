@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  color = 'what'
+  colors = ["red", "blue", "green", "yellow"]
 
   constructor() { }
 

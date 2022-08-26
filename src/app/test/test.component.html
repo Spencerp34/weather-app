@@ -1,6 +1,3 @@
-<div [ngSwitch]="color" >
-    <div *ngSwitchCase="'red'" >Your picked red</div>
-    <div *ngSwitchCase="'blue'" >Your picked blue</div>
-    <div *ngSwitchCase="'green'" >Your picked green</div>
-    <div *ngSwitchDefault>Pick again</div>
+<div *ngFor="let color of colors; index as i" >
+    <h2>{{i}} {{color}} </h2>
 </div>
