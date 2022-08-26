@@ -25,6 +25,12 @@ export class TestComponent implements OnInit {
     fontStyle: "italic"
   }
 
+  handleClick(event: any){
+    console.log(event)
+  }
+
+  greeting = ""
+
   constructor() { }
 
   ngOnInit(): void {
