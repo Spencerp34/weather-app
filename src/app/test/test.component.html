@@ -4,3 +4,8 @@
 <h2>{{5%2}} </h2>
 <h2>{{shout()}} </h2>
 <h3>{{siteURL}} </h3>
+<input [disabled]="!isDisabled" type="text" value="Example" >
+
+<!-- Two ways to do the same thing -->
+<input [disabled]="isDisabled" type="text" value="Example" >
+<input bind-disabled="isDisabled" type="text" value="Example" >

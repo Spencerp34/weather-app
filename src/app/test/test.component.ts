@@ -9,6 +9,8 @@ export class TestComponent implements OnInit {
 
   name = "Spensa"
   siteURL = window.location.href
+  myId = "testId"
+  isDisabled = false;
   constructor() { }
 
   ngOnInit(): void {
