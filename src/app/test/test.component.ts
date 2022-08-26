@@ -7,40 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  name = "Spensa"
-  siteURL = window.location.href
-  myId = "testId"
-  isDisabled = false;
-  dangerClass = "text-danger"
-  hasError = false
-  isFun= true
-  messageClasses = {
-    "text-fun": !this.hasError,
-    "text-danger": this.hasError,
-    "text-special": this.isFun
-  }
-  highlightedColor = "orange";
-  titleStyles = {
-    color: "blue",
-    fontStyle: "italic"
-  }
-
-  handleClick(event: any){
-    console.log(event)
-  }
-
-  greeting = ""
-
-  logMessage(param: any){
-    console.log(param)
-  }
+  name = "";
 
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  shout(){
-    return this.name.toUpperCase()
   }
 }

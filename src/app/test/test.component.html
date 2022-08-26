@@ -1,27 +1,2 @@
-<h2>
-    Welcome {{name}}
-</h2>
-<h2>{{5%2}} </h2>
-<h2 class="text-success" >{{shout()}} </h2>
-<h3 [class]="dangerClass" >{{siteURL}} </h3>
-<input [disabled]="!isDisabled" type="text" value="Example" >
-<h3 [class]="dangerClass" class="text-special" >Colored or Italics?</h3>
-<h3 [class.text-danger]="hasError" >Is this an Error?</h3>
-
-<h3 [ngClass]="messageClasses" > Practicing multiple classes</h3>
-
-<h2 [style.color]="hasError ? 'red' : 'green'" >Style Binding</h2>
-<h2 [style.color]="highlightedColor" >Another Style Binding</h2>
-<h2 [ngStyle]="titleStyles" >Yet Another Style Binding</h2>
-
-<button (click)="handleClick($event)" >Button 1</button>
-<button (click)="greeting='Welcome to event handlers'" >Button 1</button>
-<button  >Button 1</button>
-{{greeting}}
-
-<input type="text" #myInput >
-<button (click)="logMessage(myInput.value)" >Log</button>
-
-<!-- Two ways to do the same thing -->
-<input [disabled]="isDisabled" type="text" value="Example" >
-<input bind-disabled="isDisabled" type="text" value="Example" >
+<input [(ngModel)]="name" type="text" >
+{{name}}
